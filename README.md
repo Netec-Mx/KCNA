@@ -1,3 +1,5 @@
+<img src="images/neteclogo (2).png" alt="logo" width="300"/>
+
 # Kubernetes and Cloud Native Associat
 
 Este curso prepara al participante para la certificación Kubernetes and Cloud Native Associate (KCNA) mediante el estudio completo de los fundamentos de Kubernetes, orquestación de contenedores, entrega de aplicaciones cloud native y arquitectura cloud native. Durante el curso se revisan los conceptos esenciales de contenedores, Pods, Deployments, Services, networking, storage, seguridad, troubleshooting, observabilidad, CI/CD, GitOps y el ecosistema CNCF.
@@ -64,8 +66,12 @@ El temario está alineado con los dominios oficiales de KCNA: Kubernetes Fundame
   - Descripción: Actividad práctica orientada al diagnóstico de fallas comunes en Kubernetes mediante una metodología básica de troubleshooting, el uso de kubectl y la revisión de eventos, networking, storage y permisos.
   - Duración estimada: 60 min
 
-## Flujo de colaboración
+  ---
 
-- Trabajar en `changes_course`.
-- Crear Pull Request hacia `main`.
-- Merge por `Squash and merge`.
+## 📬 **Contacto y más información**
+
+Si tienes alguna pregunta o necesitas más detalles, no dudes en [contactarnos](mailto:soporte@netec.com). También puedes encontrar más recursos en nuestra [página](https://netec.com).
+
+---
+
+¡Gracias por visitar nuestra plataforma! No olvides revisar todos los laboratorios y comenzar tu viaje de aprendizaje hoy mismo.
