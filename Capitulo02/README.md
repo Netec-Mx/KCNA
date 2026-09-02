@@ -417,7 +417,8 @@ spec:
     spec:
       containers:
         - name: kcna-webapp
-          image: docker.io/library/kcna-webapp:1.0.0
+          image: docker.io/TU_USUARIO/kcna-webapp:1.0.0
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
               protocol: TCP
@@ -453,7 +454,7 @@ spec:
 EOF
 ```
 
-> **Nota importante:** Si publicaste tu imagen en Docker Hub en el lab 01, reemplaza `docker.io/library/kcna-webapp:1.0.0` por `docker.io/[tu-usuario-dockerhub]/kcna-webapp:1.0.0`. Si solo la tienes localmente, primero cárgala en Minikube (ver paso siguiente).
+> **Nota importante:** Reemplaza `TU_USUARIO` por tu usuario real de Docker Hub (el manifiesto usa `docker.io/TU_USUARIO/kcna-webapp:1.0.0` como placeholder, que fallará a propósito si no lo cambias). Si solo tienes la imagen localmente, primero cárgala en Minikube (ver paso siguiente); `imagePullPolicy: IfNotPresent` evita que el kubelet intente descargarla del registry.
 
 2. **(Si la imagen es local)** Carga la imagen en el entorno de Minikube:
 
@@ -464,8 +465,8 @@ minikube image load kcna-webapp:1.0.0
 Si usas la imagen de Docker Hub, actualiza la referencia en el YAML:
 
 ```bash
-# Reemplaza [TU_USUARIO] con tu usuario de Docker Hub
-sed -i "s|docker.io/library/kcna-webapp:1.0.0|docker.io/[TU_USUARIO]/kcna-webapp:1.0.0|" ~/kcna-labs/lab02/deployment.yaml
+# Reemplaza tu-usuario-dockerhub con tu usuario real de Docker Hub
+sed -i "s|docker.io/TU_USUARIO/kcna-webapp:1.0.0|docker.io/tu-usuario-dockerhub/kcna-webapp:1.0.0|" ~/kcna-labs/lab02/deployment.yaml
 ```
 
 3. Aplica el Deployment:
@@ -660,7 +661,8 @@ Para el endpoint principal (`GET /`):
 {
   "hostname": "kcna-webapp-xxxxxxxxx-xxxxx",
   "version": "1.0.0",
-  "environment": "production"
+  "environment": "production",
+  "message": "Hello from KCNA Webapp!"
 }
 ```
 
@@ -834,7 +836,7 @@ kcna-webapp-xxxxxxxxx-xxxxx   0/1     ImagePullBackOff   0          2m
 Al ejecutar `kubectl describe pod`:
 
 ```
-Warning  Failed   ...  kubelet  Failed to pull image "docker.io/library/kcna-webapp:1.0.0": ...
+Warning  Failed   ...  kubelet  Failed to pull image "docker.io/TU_USUARIO/kcna-webapp:1.0.0": ...
 ```
 
 **Causa:** Minikube ejecuta su propio daemon Docker aislado del host. Las imágenes construidas localmente en el Docker del host no están disponibles dentro de Minikube a menos que se carguen explícitamente o se descarguen desde un registry.
