@@ -51,7 +51,7 @@ En este laboratorio dominarás los comandos esenciales de `kubectl` para adminis
 minikube status
 
 # Verificar la versión de kubectl
-kubectl version --client --short 2>/dev/null || kubectl version --client
+kubectl version --client
 
 # Confirmar el contexto activo
 kubectl config current-context

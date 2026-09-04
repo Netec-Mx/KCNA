@@ -81,7 +81,7 @@ minikube-m02   Ready    <none>          60s   v1.29.2
 
 ```bash
 # Confirmar versiones
-kubectl version --client --short 2>/dev/null || kubectl version --client
+kubectl version --client
 helm version --short
 minikube status
 ```

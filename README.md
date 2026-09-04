@@ -1,5 +1,3 @@
-<img src="images/neteclogo (2).png" alt="logo" width="300"/>
-
 # Kubernetes and Cloud Native Associat
 
 Este curso prepara al participante para la certificación Kubernetes and Cloud Native Associate (KCNA) mediante el estudio completo de los fundamentos de Kubernetes, orquestación de contenedores, entrega de aplicaciones cloud native y arquitectura cloud native. Durante el curso se revisan los conceptos esenciales de contenedores, Pods, Deployments, Services, networking, storage, seguridad, troubleshooting, observabilidad, CI/CD, GitOps y el ecosistema CNCF.
@@ -66,12 +64,32 @@ El temario está alineado con los dominios oficiales de KCNA: Kubernetes Fundame
   - Descripción: Actividad práctica orientada al diagnóstico de fallas comunes en Kubernetes mediante una metodología básica de troubleshooting, el uso de kubectl y la revisión de eventos, networking, storage y permisos.
   - Duración estimada: 60 min
 
-  ---
+### Capítulo 10
 
-## 📬 **Contacto y más información**
+- [13 Práctica 10. Despliegue, actualización y rollback](Capitulo10/README.md#13-práctica-10-despliegue-actualización-y-rollback)
+  - Descripción: Actividad práctica orientada a la entrega de aplicaciones cloud native, aplicando estrategias de despliegue (RollingUpdate y Recreate), rollouts y rollbacks, configuración externa con ConfigMaps/Secrets y una introducción a Kustomize.
+  - Duración estimada: 75 min
 
-Si tienes alguna pregunta o necesitas más detalles, no dudes en [contactarnos](mailto:soporte@netec.com). También puedes encontrar más recursos en nuestra [página](https://netec.com).
+### Capítulo 11
 
----
+- [9 Práctica 11. Debugging de una aplicación con probes](Capitulo11/README.md#9-práctica-11-debugging-de-una-aplicación-con-probes)
+  - Descripción: Actividad práctica orientada al debugging de aplicaciones cloud native mediante readiness, liveness y startup probes, análisis de logs y variables de configuración, y depuración con Pods y contenedores efímeros.
+  - Duración estimada: 60 min
 
-¡Gracias por visitar nuestra plataforma! No olvides revisar todos los laboratorios y comenzar tu viaje de aprendizaje hoy mismo.
+### Capítulo 12
+
+- [10 Práctica 12. Observabilidad básica con métricas y logs](Capitulo12/README.md#10-práctica-12-observabilidad-básica-con-métricas-y-logs)
+  - Descripción: Actividad práctica orientada a la observabilidad cloud native, habilitando el metrics-server, consultando métricas con `kubectl top`, trabajando con logs de aplicación y diferenciando los tres pilares (métricas, logs y trazas).
+  - Duración estimada: 45 min
+
+### Capítulo 13
+
+- [15 Práctica 13. Flujo cloud native completo para KCNA](Capitulo13/README.md#15-práctica-13-flujo-cloud-native-completo-para-kcna)
+  - Descripción: Laboratorio final integrador que combina arquitectura, seguridad (RBAC y SecurityContext), entrega de aplicaciones, observabilidad y debugging sobre un flujo cloud native completo, con mapeo al CNCF Landscape y autoevaluación tipo KCNA.
+  - Duración estimada: 120 min
+
+## Flujo de colaboración
+
+- Trabajar en `changes_course`.
+- Crear Pull Request hacia `main`.
+- Merge por `Squash and merge`.
