@@ -1,3 +1,5 @@
+<img src="images/neteclogo (2).png" alt="logo" width="300"/>
+
 # Kubernetes and Cloud Native Associat
 
 Este curso prepara al participante para la certificación Kubernetes and Cloud Native Associate (KCNA) mediante el estudio completo de los fundamentos de Kubernetes, orquestación de contenedores, entrega de aplicaciones cloud native y arquitectura cloud native. Durante el curso se revisan los conceptos esenciales de contenedores, Pods, Deployments, Services, networking, storage, seguridad, troubleshooting, observabilidad, CI/CD, GitOps y el ecosistema CNCF.
@@ -12,31 +14,31 @@ El temario está alineado con los dominios oficiales de KCNA: Kubernetes Fundame
 
 ### Capítulo 1
 
-- [8 Práctica 1. Construcción y ejecución básica de contenedores](Capitulo01/README.md#8-práctica-1-construcción-y-ejecución-básica-de-contenedores)
+- [Práctica 1. Construcción y ejecución básica de contenedores](Capitulo01/README.md#8-práctica-1-construcción-y-ejecución-básica-de-contenedores)
   - Descripción: Actividad práctica orientada a la construcción y ejecución básica de contenedores, aplicando los fundamentos de contenedores, imágenes, registries y runtimes revisados en el capítulo.
   - Duración estimada: 45 min
 
 ### Capítulo 2
 
-- [13 Práctica 2. Primer despliegue en Kubernetes](Capitulo02/README.md#13-práctica-2-primer-despliegue-en-kubernetes)
+- [Práctica 2. Primer despliegue en Kubernetes](Capitulo02/README.md#13-práctica-2-primer-despliegue-en-kubernetes)
   - Descripción: Actividad práctica orientada a realizar un primer despliegue en Kubernetes, aplicando los conceptos de arquitectura, objetos principales y manifiestos declarativos revisados en el capítulo.
   - Duración estimada: 45 min
 
 ### Capítulo 3
 
-- [11 Práctica 3. Administración básica con kubectl](Capitulo03/README.md#11-práctica-3-administración-básica-con-kubectl)
+- [Práctica 3. Administración básica con kubectl](Capitulo03/README.md#11-práctica-3-administración-básica-con-kubectl)
   - Descripción: Actividad práctica orientada a administrar recursos de Kubernetes con kubectl, aplicando operaciones de consulta, creación, modificación, eliminación y revisión de estados y eventos.
   - Duración estimada: 45 min
 
 ### Capítulo 4
 
-- [9 Práctica 4. Scheduling básico y análisis de Pods pendientes](Capitulo04/README.md#9-práctica-4-scheduling-básico-y-análisis-de-pods-pendientes)
+- [Práctica 4. Scheduling básico y análisis de Pods pendientes](Capitulo04/README.md#9-práctica-4-scheduling-básico-y-análisis-de-pods-pendientes)
   - Descripción: Actividad práctica orientada a aplicar conceptos básicos de scheduling y analizar Pods pendientes considerando requests, limits, selección de nodos y condiciones de capacidad del cluster.
   - Duración estimada: 45 min
 
 ### Capítulo 5
 
-- [7 Práctica 5. Laboratorio integrador de fundamentos](Capitulo05/README.md#7-práctica-5-laboratorio-integrador-de-fundamentos)
+- [Práctica 5. Laboratorio integrador de fundamentos](Capitulo05/README.md#7-práctica-5-laboratorio-integrador-de-fundamentos)
   - Descripción: Actividad práctica integradora de los fundamentos de Kubernetes, enfocada en arquitectura, objetos principales, lectura de manifiestos YAML e identificación de componentes y responsabilidades.
   - Duración estimada: 75 min
 
@@ -54,7 +56,7 @@ El temario está alineado con los dominios oficiales de KCNA: Kubernetes Fundame
 
 ### Capítulo 8
 
-- [9 Práctica 8. Persistencia básica con PVC](Capitulo08/README.md#9-práctica-8-persistencia-básica-con-pvc)
+- [Práctica 8. Persistencia básica con PVC](Capitulo08/README.md#9-práctica-8-persistencia-básica-con-pvc)
   - Descripción: Actividad práctica orientada a configurar persistencia básica con PVC, aplicando los conceptos de PersistentVolume, PersistentVolumeClaim, StorageClass y almacenamiento persistente revisados en el capítulo.
   - Duración estimada: 40 min
 
@@ -66,27 +68,37 @@ El temario está alineado con los dominios oficiales de KCNA: Kubernetes Fundame
 
 ### Capítulo 10
 
-- [13 Práctica 10. Despliegue, actualización y rollback](Capitulo10/README.md#13-práctica-10-despliegue-actualización-y-rollback)
+- [Práctica 10. Despliegue, actualización y rollback](Capitulo10/README.md#13-práctica-10-despliegue-actualización-y-rollback)
   - Descripción: Actividad práctica orientada a la entrega de aplicaciones cloud native, aplicando estrategias de despliegue (RollingUpdate y Recreate), rollouts y rollbacks, configuración externa con ConfigMaps/Secrets y una introducción a Kustomize.
   - Duración estimada: 75 min
 
 ### Capítulo 11
 
-- [9 Práctica 11. Debugging de una aplicación con probes](Capitulo11/README.md#9-práctica-11-debugging-de-una-aplicación-con-probes)
+- [Práctica 11. Debugging de una aplicación con probes](Capitulo11/README.md#9-práctica-11-debugging-de-una-aplicación-con-probes)
   - Descripción: Actividad práctica orientada al debugging de aplicaciones cloud native mediante readiness, liveness y startup probes, análisis de logs y variables de configuración, y depuración con Pods y contenedores efímeros.
   - Duración estimada: 60 min
 
 ### Capítulo 12
 
-- [10 Práctica 12. Observabilidad básica con métricas y logs](Capitulo12/README.md#10-práctica-12-observabilidad-básica-con-métricas-y-logs)
+- [Práctica 12. Observabilidad básica con métricas y logs](Capitulo12/README.md#10-práctica-12-observabilidad-básica-con-métricas-y-logs)
   - Descripción: Actividad práctica orientada a la observabilidad cloud native, habilitando el metrics-server, consultando métricas con `kubectl top`, trabajando con logs de aplicación y diferenciando los tres pilares (métricas, logs y trazas).
   - Duración estimada: 45 min
 
 ### Capítulo 13
 
-- [15 Práctica 13. Flujo cloud native completo para KCNA](Capitulo13/README.md#15-práctica-13-flujo-cloud-native-completo-para-kcna)
+- [Práctica 13. Flujo cloud native completo para KCNA](Capitulo13/README.md#15-práctica-13-flujo-cloud-native-completo-para-kcna)
   - Descripción: Laboratorio final integrador que combina arquitectura, seguridad (RBAC y SecurityContext), entrega de aplicaciones, observabilidad y debugging sobre un flujo cloud native completo, con mapeo al CNCF Landscape y autoevaluación tipo KCNA.
   - Duración estimada: 120 min
+ 
+    ---
+
+## 📬 **Contacto y más información**
+
+Si tienes alguna pregunta o necesitas más detalles, no dudes en [contactarnos](mailto:soporte@netec.com). También puedes encontrar más recursos en nuestra [página](https://netec.com).
+
+---
+
+¡Gracias por visitar nuestra plataforma! No olvides revisar todos los laboratorios y comenzar tu viaje de aprendizaje hoy mismo.
 
 ## Flujo de colaboración
 
